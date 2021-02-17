@@ -1,5 +1,43 @@
 
 
+
+@media screen and (min-width: 500px) {
+
+    .wrapper,
+    ul,
+    #wrapperGallery {
+        display: flex;
+        flex-flow:  wrap row;
+    }
+    .wrapper{
+        width: 70%;
+    }
+    .side{
+        flex: 26%;
+    }
+    .wrapper section{
+        margin-right: 8%;
+        flex:66%;
+    } 
+
+    .side aside:first-child {
+        margin-top: 0;
+    }
+    
+
+    /* .wrapper, ul, #wrapperGallery {
+        flex-direction: column;
+        
+    }
+    .side{
+        margin-top: 30px;
+    }
+    .wrapper section{
+        margin-right: 8%;
+    } */
+}
+
+
 /*nad tymto su skusky*/
 .wrapper img:not(.poslednaUloha img) {
     width: 100%;
@@ -8,23 +46,24 @@
 
 
 .poslednaUloha {
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex;
+    flex-wrap: wrap; */
     height: 500px;
     margin: 40px 0 0;
 
 }
 
 .poslednaUloha img:first-child {
-    flex: 35%;
+    /* flex: 35%; */
     border-radius: 50%;
     margin: 80px 0 0 25px;
     padding: 0 25px 0;
+    width: 40%;
 
 }
 
 .poslednaUloha .text {
-    flex: 30%;
+    /* flex: 30%; */
 }
 
 i {
@@ -40,11 +79,13 @@ i {
     text-align: left;
     padding: 0 25px;
 }
-
-#main {
-    background-color: #f7f7f7;
-    padding: 0 0 50px;
+body{
+    background-color: #cecccc;
 }
+
+/* #main {
+    padding: 0 0 50px;
+} */
 
 header,
 footer {
@@ -59,24 +100,25 @@ footer {
 
 footer li {
     text-align: center;
-    padding: 0 0 0 15px;
-    margin: 0 0 0 15px;
-    border-left: solid 1px rgb(136, 136, 136);
+    padding: 0.5em 0 ;
+    /* margin: 0 0 0 15px; */
+    /* border-left: solid 1px rgb(136, 136, 136); */
     font-size: 18px;
 }
-
+/* 
 footer li:first-child {
     padding: 0;
     margin: 0;
     border: 0;
-}
+} */
 
 footer div {
-    display: flex;
+    /* display: flex; */
+    margin: 0 1em;
 }
 
 footer ul {
-    display: inline-flex;
+    /* display: inline-flex; */
     justify-content: center;
     text-align: center;
     border-radius: 7px;
@@ -104,16 +146,21 @@ header li:hover:not(:first-child) {
 }
 
 header ul {
-    margin: 5;
-    display: flex;
+    margin: 0;
+    /* display: flex; */
+
     justify-content: center;
+    padding-left: 0;
+
+}
+
+header{
+    background-color: white;
 }
 
 
 header li {
-    flex-direction: row;
-    text-decoration: none;
-
+    list-style-type: none;
     text-align: center;
     margin: 10px;
     padding: 10px 15px;
@@ -128,46 +175,28 @@ header li {
 }
 
 .wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    width: 70%;
+    /* display: flex;
+    flex-wrap: wrap; */
+    /* width: 100%; */
+
     margin: 0 auto;
-    padding: 70px 0 0;
+    /* padding: 70px 0 0; */
 }
 
 .wrapper section {
-    flex: 60%;
+    /* flex: 60%; */
+    width: 100%;
     background-color: white;
-    margin-right: 8%;
-}
-
-.side {
-    flex: 22%;
-}
-
-
-@media  screen and (max-width: 700px) {
-    .wrapper, ul, #wrapperGallery {
-        flex-direction: column;
-        
-    }
-    .side{
-        margin-top: 30px;
-    }
-    .wrapper section{
-        margin-right: 0%;
-    }
 }
 
 .wrapper aside {
-
-    margin-bottom: 30px;
+    margin-top: 2em;
 }
 
 
 #wrapperGallery {
     display: flex;
-
+    flex-flow: wrap column;
     margin: 0 auto;
     padding: 0 3% 20px;
 }
@@ -176,7 +205,7 @@ header li {
 .gallery {
     padding: 0 2%;
     background-color: white;
-    flex: 33%;
+    flex: 1;
 }
 
 #wrapperGallery .desc {
@@ -185,6 +214,20 @@ header li {
     border: 1px solid rgb(204, 204, 204);
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* B L B O S T I*/
 
 h1 {
     font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
@@ -224,9 +267,6 @@ p {
     line-height: 24px;
     padding: 25px;
 }
-
-
-
 
 /* group */
 .group:before,
