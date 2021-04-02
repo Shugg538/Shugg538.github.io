@@ -5,30 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>Dopetrope</h1>
-        <ul>
-            <li class="home">Home</li>
-            <li>Dropdown</li>
-            <li>Left Sidebar</li>
-            <li>Right Sidebar</li>
-            <li>No Sidebar</li>
-        </ul>
-        <hr>
 
-    </header>
 
-        <div class="wrapper">
+    <div class="wrapper">
+        <header class="header">
+            <h1>Dopetrope</h1>
+            <ul>
+                <li class="home">Home</li>
+                <li>Dropdown</li>
+                <li>Left Sidebar</li>
+                <li>Right Sidebar</li>
+                <li>No Sidebar</li>
+            </ul>
+            <hr>
 
-            <section>
-                <img src="images/pic01.jpg" id="image1" height="100" alt="">
-                <h1 id="mainTitel">Right sidebar
+        </header>
+
+        <section class='mainSection'>
+            <img class='mainImage' src="images/pic01.jpg" height="180" alt="skaredy obrazok">
+            <div class="mainBar">
+                <h1 class="mainTitel">Main Bar
                 </h1>
                 <i>Lorem ipsum dolor sit amet feugiat
 
@@ -55,23 +56,19 @@
                     dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet nullam consequat feugiat
                     dolore tempus.</p>
 
-                <div id="wrapperGallery" >
-                    <h2 id="ev">Everybody behold, this is gonna be It</h2>
-
+                <div class="wrapperGallery">
+                    <h2 class="galleryTitel">Everybody behold, this is gonna be It</h2>
                     <div class="gallery">
-                        <img src="images/pic01.jpg" alt="asd" height="100">
+                        <img src="images/pic01.jpg" alt="asd">
                         <div class="desc"> pekny obrazok</div>
                     </div>
-
                     <div class="gallery">
-                        <img src="images/pic09.jpg" alt="" height="100">
+                        <img src="images/pic09.jpg" alt="">
                         <div class="desc"> pekny obrazok</div>
-
                     </div>
                     <div class="gallery">
-                        <img src="images/pic09.jpg" alt="" height="100">
+                        <img src="images/pic09.jpg" alt="">
                         <div class="desc"> pekny obrazok</div>
-
                     </div>
 
                 </div>
@@ -79,56 +76,57 @@
                 <div class="poslednaUloha">
                     <img src="images/pic01.jpg" height="100" alt="">
 
-                    <div class="text">
+                    <div class="textOAutorovi">
                         <h2>O autorovi</h2>
                         <h3>Admin Rastovity</h3>
                         <p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit
-                        adipiscing
-                        et feugiat phasellus tempus dolore ipsum lorem dolore. </p>
+                            adipiscing
+                            et feugiat phasellus tempus dolore ipsum lorem dolore. </p>
                     </div>
 
                 </div>
+            </div>
+        </section>
+
+        <div class="side">
+            <aside class="bok">
+                <img src="images/pic09.jpg" height="100" alt="">
+                <div class="sideTextWrapper">
+                    <h2>Sed etiam lorem nulla</h2>
+                    <p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit
+                        adipiscing
+                        et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
+                </div>
+            </aside>
+            <aside class="bok">
+                <img src="images/pic09.jpg" height="100" alt="">
+                <div class="sideTextWrapper">
+                    <h2>Sed etiam lorem nulla</h2>
+                    <p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit
+                        adipiscing
+                        et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
+                </div>
+            </aside>
+
+        </div>
+        <footer class="footer">
+            <section>
+
             </section>
+            <br><br>
 
-            <div class="side">
-                <aside class="bok">
-                    <img src="images/pic09.jpg" height="100" alt="">
-                    <h2>Sed etiam lorem nulla</h2>
-
-                    <p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit
-                        adipiscing
-                        et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
-                </aside>
-                <aside class="bok">
-                    <img src="images/pic09.jpg" height="100" alt="">
-                    <h2>Sed etiam lorem nulla</h2>
-
-                    <p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit
-                        adipiscing
-                        et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
-                </aside>
-
+            <div>
+                <ul>
+                    <li>Untitled. All rights reserved</li>
+                    <li>Design: <a href="">HTML5 UP</a></li>
+                    <li>Demo images: <a href="">Dreametry Doodle</a></li>
+                </ul>
             </div>
 
+            <br><br>
+        </footer>
 
-        </div>
-
-    <footer>
-        <section>
-
-        </section>
-        <br><br>
-
-        <div>
-            <ul>
-                <li>Untitled. All rights reserved</li>
-                <li>Design: <a href="">HTML5 UP</a></li>
-                <li>Demo images: <a href="">Dreametry Doodle</a></li>
-            </ul>
-        </div>
-
-        <br><br>
-    </footer>
+    </div>
 
 </body>
 
