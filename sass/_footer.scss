@@ -3,16 +3,24 @@ footer {
   padding: 0;
   background-color: #353434;
   color: #858484;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 
 }
 
 footer ul {
   display: flex;
   flex-direction: column;
+
+justify-content: center;
 }
 
 footer li {
 display: flex;
+justify-content: center;
+gap: .5rem;
+
 flex-direction: column;
 }
 
