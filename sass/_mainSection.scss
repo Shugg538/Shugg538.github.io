@@ -1,10 +1,6 @@
 .mainBar {
   padding: 0 3em;
 }
-.mainImage {
-  max-width: 100%;
-}
-
 .mainSection,
 .side {
   background-color: white;
@@ -12,7 +8,7 @@
 }
 .mainImage{
     width: 100%;
-    max-height: 200px;
+    max-height: 150px;
     object-fit: cover;
     object-position: bottom;
 

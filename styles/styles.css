@@ -73,11 +73,16 @@ header li:hover:not(:first-child) {
 /*------ POSLEDNA ULOHA------*/
 .poslednaUloha {
   display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 3rem;
   margin: 3em 0;
 }
+.poslednaUloha h2, .poslednaUloha h3 {
+  text-align: center;
+}
+.poslednaUloha h2 {
+  margin: 2em 0;
+}
 .poslednaUloha img {
+  margin: 0 auto;
   object-fit: cover;
   width: 150px;
   height: 150px;
@@ -192,10 +197,6 @@ p {
   padding: 0 3em;
 }
 
-.mainImage {
-  max-width: 100%;
-}
-
 .mainSection,
 .side {
   background-color: white;
@@ -204,7 +205,7 @@ p {
 
 .mainImage {
   width: 100%;
-  max-height: 200px;
+  max-height: 150px;
   object-fit: cover;
   object-position: bottom;
 }
@@ -293,17 +294,11 @@ p {
   }
 
   .poslednaUloha {
-    display: grid;
     grid-template-columns: auto 1fr;
     gap: 3rem;
-    margin: 3em 0;
   }
-  .poslednaUloha img {
-    object-fit: cover;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    align-self: center;
+  .poslednaUloha h2, .poslednaUloha h3 {
+    text-align: left;
   }
 }
 

@@ -9,15 +9,18 @@ grid-template-rows: max-content;
 
 /*------ POSLEDNA ULOHA------*/
 
-.poslednaUloha {
+.poslednaUloha{
   display: grid;
-  // grid-template-columns: repeat(auto-fit, minmax(50px,1fr));
-  grid-template-columns: auto 1fr;
-  // zapisat ako sa mi ich tam podarilo dat -  grid-template-columns: auto 1fr;
-  gap: 3rem;
   margin: 3em 0;
+  h2, h3{
+    text-align: center; 
+  }
+  h2{
+    margin: 2em 0;
+  }
 
-  img {
+    img {
+      margin: 0 auto;
     object-fit: cover;
     width: 150px;
     height: 150px;
@@ -25,6 +28,23 @@ grid-template-rows: max-content;
     align-self: center;
   }
 }
+
+// .poslednaUloha {
+//   display: grid;
+//   // grid-template-columns: repeat(auto-fit, minmax(50px,1fr));
+//   grid-template-columns: auto 1fr;
+//   // zapisat ako sa mi ich tam podarilo dat -  grid-template-columns: auto 1fr;
+//   gap: 3rem;
+//   margin: 3em 0;
+
+//   img {
+//     object-fit: cover;
+//     width: 150px;
+//     height: 150px;
+//     border-radius: 50%;
+//     align-self: center;
+//   }
+// }
 
 /*  ----- BLBOSTI------*/
 
