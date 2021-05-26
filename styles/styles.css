@@ -7,20 +7,20 @@ footer {
   justify-content: center;
   gap: 10px;
 }
-
+footer div {
+  align-self: center;
+}
 footer ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
 footer li {
   display: flex;
   justify-content: center;
   gap: 0.5rem;
   flex-direction: column;
 }
-
 footer a {
   color: #9c9b9b;
 }
@@ -30,18 +30,18 @@ header {
   margin: 0;
   padding: 0;
 }
-
+header hr {
+  margin: 0;
+}
 header ul {
   display: flex;
   flex-direction: column;
   padding: 0;
 }
-
 header h1 {
   margin-top: 0;
   padding-top: 20px;
 }
-
 header li {
   list-style-type: none;
   text-align: center;
@@ -50,13 +50,11 @@ header li {
   font-style: italic;
   font-size: 18px;
 }
-
 header li:hover:not(:first-child) {
   background-color: #f5f5f5;
   border-radius: 5px;
 }
-
-.home {
+header .home {
   background-color: #e35252;
   font-size: large;
   border-radius: 5px;
@@ -73,13 +71,13 @@ header li:hover:not(:first-child) {
 /*------ POSLEDNA ULOHA------*/
 .poslednaUloha {
   display: grid;
-  margin: 3em 0;
+  margin: 2em 0;
 }
 .poslednaUloha h2, .poslednaUloha h3 {
   text-align: center;
 }
 .poslednaUloha h2 {
-  margin: 2em 0;
+  margin: 0.5em 0;
 }
 .poslednaUloha img {
   margin: 0 auto;
@@ -138,7 +136,18 @@ p {
   line-height: 24px;
 }
 
+aside {
+  background-color: white;
+  box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
 .side aside {
+  margin: 0px 0 0;
+}
+
+.side {
+  display: grid;
+  gap: 30px;
   margin: 30px 0 0;
 }
 
@@ -166,6 +175,7 @@ p {
   flex-wrap: wrap;
   gap: 10px;
   justify-content: center;
+  margin: 1em 0 0;
 }
 
 .gallery {
@@ -191,14 +201,14 @@ p {
 .galleryTitel {
   padding: 0 0;
   text-align: center;
+  margin: 2em 0 0;
 }
 
 .mainBar {
   padding: 0 3em;
 }
 
-.mainSection,
-.side {
+.mainSection {
   background-color: white;
   box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
@@ -235,11 +245,13 @@ p {
   .mainSection {
     grid-row: 2;
     grid-column: 2/span 5;
+    margin: 50px 0;
   }
 
   .side {
-    grid-column: 2;
+    grid-row: 2;
     grid-column: 8/span 2;
+    height: min-content;
   }
 
   .footer {
@@ -254,15 +266,28 @@ p {
   .wrapper img:not(.poslednaUloha img) {
     width: 100%;
   }
+
+  aside {
+    height: min-content;
+    margin: 200px;
+  }
+
+  .side {
+    margin: 50px 0 0;
+  }
+
+  aside, .mainSection {
+    border-radius: 15px;
+  }
+
+  .mainImage, aside > img {
+    border-radius: 15px 15px 0 0;
+  }
 }
 @media screen and (min-width: 40em) {
   header ul {
     flex-direction: row;
     justify-content: center;
-  }
-
-  .side aside:first-child {
-    margin-top: 0;
   }
 
   footer ul {
