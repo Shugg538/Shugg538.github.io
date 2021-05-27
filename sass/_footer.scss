@@ -5,25 +5,28 @@ footer {
   color: #858484;
   display: flex;
   justify-content: center;
-  gap: 10px;
-
+  // gap: 10px;
+  
   div {
-    align-self: center;
+    align-self: center; 
   }
-
+  
   ul {
     display: flex;
     flex-direction: column;
-
     justify-content: center;
+    align-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
   }
 
   li {
     display: flex;
     justify-content: center;
-    gap: 0.5rem;
-
+    align-content: space-around;
     flex-direction: column;
+    margin: 0.5em;
   }
 
   a {

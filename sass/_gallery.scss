@@ -1,21 +1,19 @@
-
-
 .wrapperGallery {
   display: flex;
-  flex-direction: row;
+  // flex-direction: row;
   flex-wrap: wrap;
   gap: 10px;
   justify-content: center;
   margin: 1em 0 0;
-
-
 }
 
-.gallery {
+.galleryItem {
   display: flex;
   flex: 1;
   flex-direction: column;
+  width: 160px;
   min-width: 160px;
+  // max-width: 230px;
   max-width: 100%;
 
   background-color: white;
@@ -33,9 +31,7 @@
 }
 
 .galleryTitel {
-  padding: 0 0;
+  padding: 0;
   text-align: center;
   margin: 2em 0 0;
-
 }
-
